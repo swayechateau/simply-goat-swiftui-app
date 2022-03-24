@@ -11,6 +11,13 @@
 		9CFF61DE27EC4927006A6BA1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CFF61DD27EC4927006A6BA1 /* ContentView.swift */; };
 		9CFF61E027EC4929006A6BA1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CFF61DF27EC4929006A6BA1 /* Assets.xcassets */; };
 		9CFF61E327EC4929006A6BA1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CFF61E227EC4929006A6BA1 /* Preview Assets.xcassets */; };
+		9CFF61EB27EC4C82006A6BA1 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CFF61EA27EC4C82006A6BA1 /* MainView.swift */; };
+		9CFF61ED27EC4F90006A6BA1 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CFF61EC27EC4F90006A6BA1 /* WelcomeView.swift */; };
+		9CFF61F027EC5047006A6BA1 /* GoatListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CFF61EF27EC5047006A6BA1 /* GoatListView.swift */; };
+		9CFF61F227EC52B2006A6BA1 /* GoatModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CFF61F127EC52B2006A6BA1 /* GoatModel.swift */; };
+		9CFF61F427EC52F6006A6BA1 /* GoatApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CFF61F327EC52F6006A6BA1 /* GoatApi.swift */; };
+		9CFF61F627EC54DE006A6BA1 /* GoatDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CFF61F527EC54DE006A6BA1 /* GoatDetailsView.swift */; };
+		9CFF61F827EC5C7C006A6BA1 /* LikeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CFF61F727EC5C7C006A6BA1 /* LikeButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +26,13 @@
 		9CFF61DD27EC4927006A6BA1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		9CFF61DF27EC4929006A6BA1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9CFF61E227EC4929006A6BA1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		9CFF61EA27EC4C82006A6BA1 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		9CFF61EC27EC4F90006A6BA1 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		9CFF61EF27EC5047006A6BA1 /* GoatListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoatListView.swift; sourceTree = "<group>"; };
+		9CFF61F127EC52B2006A6BA1 /* GoatModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoatModel.swift; sourceTree = "<group>"; };
+		9CFF61F327EC52F6006A6BA1 /* GoatApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoatApi.swift; sourceTree = "<group>"; };
+		9CFF61F527EC54DE006A6BA1 /* GoatDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoatDetailsView.swift; sourceTree = "<group>"; };
+		9CFF61F727EC5C7C006A6BA1 /* LikeButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +67,10 @@
 			children = (
 				9CFF61DB27EC4927006A6BA1 /* SimplyGoatApp.swift */,
 				9CFF61DD27EC4927006A6BA1 /* ContentView.swift */,
+				9CFF61F127EC52B2006A6BA1 /* GoatModel.swift */,
+				9CFF61F327EC52F6006A6BA1 /* GoatApi.swift */,
+				9CFF61EE27EC4FE0006A6BA1 /* Goats Tab */,
+				9CFF61E927EC4C57006A6BA1 /* Main Tab */,
 				9CFF61DF27EC4929006A6BA1 /* Assets.xcassets */,
 				9CFF61E127EC4929006A6BA1 /* Preview Content */,
 			);
@@ -65,6 +83,25 @@
 				9CFF61E227EC4929006A6BA1 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		9CFF61E927EC4C57006A6BA1 /* Main Tab */ = {
+			isa = PBXGroup;
+			children = (
+				9CFF61EA27EC4C82006A6BA1 /* MainView.swift */,
+				9CFF61EC27EC4F90006A6BA1 /* WelcomeView.swift */,
+			);
+			path = "Main Tab";
+			sourceTree = "<group>";
+		};
+		9CFF61EE27EC4FE0006A6BA1 /* Goats Tab */ = {
+			isa = PBXGroup;
+			children = (
+				9CFF61EF27EC5047006A6BA1 /* GoatListView.swift */,
+				9CFF61F527EC54DE006A6BA1 /* GoatDetailsView.swift */,
+				9CFF61F727EC5C7C006A6BA1 /* LikeButton.swift */,
+			);
+			path = "Goats Tab";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +174,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9CFF61F227EC52B2006A6BA1 /* GoatModel.swift in Sources */,
+				9CFF61F827EC5C7C006A6BA1 /* LikeButton.swift in Sources */,
 				9CFF61DE27EC4927006A6BA1 /* ContentView.swift in Sources */,
+				9CFF61EB27EC4C82006A6BA1 /* MainView.swift in Sources */,
 				9CFF61DC27EC4927006A6BA1 /* SimplyGoatApp.swift in Sources */,
+				9CFF61F627EC54DE006A6BA1 /* GoatDetailsView.swift in Sources */,
+				9CFF61F427EC52F6006A6BA1 /* GoatApi.swift in Sources */,
+				9CFF61F027EC5047006A6BA1 /* GoatListView.swift in Sources */,
+				9CFF61ED27EC4F90006A6BA1 /* WelcomeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
