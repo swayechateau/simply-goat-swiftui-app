@@ -12,14 +12,14 @@ struct ContentView: View {
         TabView {
             MainView()
             .tabItem {
-                Text("Main Screen")
+                Text("Home")
                     .font(.system(size: 26))
             }
             .tag(0)
             
             GoatListView()
                 .tabItem {
-                    Text("Goat List")
+                    Text("Goats")
                         .font(.system(size: 26))
                 }
                 .tag(1)
@@ -29,7 +29,8 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        
-        ContentView()
+        NavigationView{
+            ContentView()
+        }
     }
 }

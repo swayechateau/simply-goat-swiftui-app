@@ -13,8 +13,7 @@ class apiCall {
         
         URLSession.shared.dataTask(with: url) { (data, _, _) in
             let goats = try! JSONDecoder().decode([Goat].self, from: data!)
-            print(goats)
-            
+            // print(goats)
             DispatchQueue.main.async {
                 completion(goats)
             }

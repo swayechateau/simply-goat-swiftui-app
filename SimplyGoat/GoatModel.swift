@@ -8,9 +8,20 @@
 import Foundation
 
 struct Goat: Codable, Identifiable {
+    var id: Int
+    var name: String
+    var image: String
+    var likes: Int
+    var fun_fact: String
+}
+/*
+class GoatWithLikes {
     let id: Int
     let name: String
     let image: String
     let likes: Int
     let fun_fact: String
+    
+    @Published var isLiked: Bool = false
 }
+*/

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9CF96F1E27EC81E9004145F9 /* GoatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF96F1D27EC81E9004145F9 /* GoatsView.swift */; };
+		9CF96F2027EC85D2004145F9 /* StaticGoatList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF96F1F27EC85D2004145F9 /* StaticGoatList.swift */; };
 		9CFF61DC27EC4927006A6BA1 /* SimplyGoatApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CFF61DB27EC4927006A6BA1 /* SimplyGoatApp.swift */; };
 		9CFF61DE27EC4927006A6BA1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CFF61DD27EC4927006A6BA1 /* ContentView.swift */; };
 		9CFF61E027EC4929006A6BA1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CFF61DF27EC4929006A6BA1 /* Assets.xcassets */; };
@@ -21,6 +23,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9CF96F1D27EC81E9004145F9 /* GoatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoatsView.swift; sourceTree = "<group>"; };
+		9CF96F1F27EC85D2004145F9 /* StaticGoatList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaticGoatList.swift; sourceTree = "<group>"; };
 		9CFF61D827EC4927006A6BA1 /* SimplyGoat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimplyGoat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CFF61DB27EC4927006A6BA1 /* SimplyGoatApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimplyGoatApp.swift; sourceTree = "<group>"; };
 		9CFF61DD27EC4927006A6BA1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -100,6 +104,8 @@
 				9CFF61EF27EC5047006A6BA1 /* GoatListView.swift */,
 				9CFF61F527EC54DE006A6BA1 /* GoatDetailsView.swift */,
 				9CFF61F727EC5C7C006A6BA1 /* LikeButton.swift */,
+				9CF96F1D27EC81E9004145F9 /* GoatsView.swift */,
+				9CF96F1F27EC85D2004145F9 /* StaticGoatList.swift */,
 			);
 			path = "Goats Tab";
 			sourceTree = "<group>";
@@ -178,9 +184,11 @@
 				9CFF61F827EC5C7C006A6BA1 /* LikeButton.swift in Sources */,
 				9CFF61DE27EC4927006A6BA1 /* ContentView.swift in Sources */,
 				9CFF61EB27EC4C82006A6BA1 /* MainView.swift in Sources */,
+				9CF96F2027EC85D2004145F9 /* StaticGoatList.swift in Sources */,
 				9CFF61DC27EC4927006A6BA1 /* SimplyGoatApp.swift in Sources */,
 				9CFF61F627EC54DE006A6BA1 /* GoatDetailsView.swift in Sources */,
 				9CFF61F427EC52F6006A6BA1 /* GoatApi.swift in Sources */,
+				9CF96F1E27EC81E9004145F9 /* GoatsView.swift in Sources */,
 				9CFF61F027EC5047006A6BA1 /* GoatListView.swift in Sources */,
 				9CFF61ED27EC4F90006A6BA1 /* WelcomeView.swift in Sources */,
 			);

@@ -11,7 +11,7 @@ struct GoatListView: View {
     @State var goats = [Goat]()
     
     var body: some View {
-        List(goats, id: \.self.id) { goat in
+        List(goats, id: \.id) { goat in
             NavigationLink(
                 destination: GoatDetailsView(goat: goat), label: {
                     Text(goat.name)
