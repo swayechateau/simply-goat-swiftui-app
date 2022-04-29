@@ -13,15 +13,10 @@ struct Goat: Codable, Identifiable {
     var image: String
     var likes: Int
     var fun_fact: String
+
 }
-/*
-class GoatWithLikes {
-    let id: Int
-    let name: String
-    let image: String
-    let likes: Int
-    let fun_fact: String
-    
-    @Published var isLiked: Bool = false
+
+struct GoatPopularity {
+    var goatId: Int
+    var isLiked: Bool = false
 }
-*/

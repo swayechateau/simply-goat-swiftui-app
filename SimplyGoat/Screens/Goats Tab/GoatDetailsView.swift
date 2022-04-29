@@ -8,8 +8,8 @@
 import SwiftUI
 
 struct GoatDetailsView: View {
-    let goat: Goat
-    // @State var isLiked = false;
+    //@ObservedObject var goatsListViewModel: GoatListViewModel
+    var goat: GoatViewModel
     var body: some View {
         ZStack(alignment: .topLeading) {
             Color.white.opacity(0.5)
@@ -42,7 +42,18 @@ struct GoatDetailsView: View {
                 .frame(width: 300, height: 400)
                 .foregroundColor(Color.black.opacity(0.8))
             VStack (alignment: .leading, spacing: 16) {
-                // LikeButton(isLiked: $isLiked)
+                //LikeButton(isLiked: goat.isLiked)
+                
+                Button(action: {
+                    goat.isLiked = !goat.isLiked
+                    
+                }, label: {
+                    Image(systemName: goat.isLiked ? "heart.fill" : "heart")
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .frame(width: 50)
+                        .foregroundColor(goat.isLiked ? .red : .gray)
+                })
             }
         }
     }

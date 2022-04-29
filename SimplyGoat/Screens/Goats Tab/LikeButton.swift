@@ -16,7 +16,7 @@ struct LikeButton: View {
             Image(systemName: isLiked ? "heart.fill" : "heart")
                 .resizable()
                 .aspectRatio(contentMode: .fit)
-                .frame(width: 100)
+                .frame(width: 50)
                 .foregroundColor(isLiked ? .red : .gray)
         })
     }

@@ -16,7 +16,7 @@ struct MainView: View {
             
             ZStack {
                 Circle()
-                    .frame(width: 400, height: 400)
+                    .frame(width: 400, height: 100)
                     .offset(x: 150, y: -200)
                     .foregroundColor(Color.purple.opacity(0.6))
                     .blur(radius: 8)

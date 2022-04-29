@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		387104F02818122A009D5D13 /* GoatsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 387104EF2818122A009D5D13 /* GoatsViewModel.swift */; };
 		9CF96F1E27EC81E9004145F9 /* GoatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF96F1D27EC81E9004145F9 /* GoatsView.swift */; };
 		9CF96F2027EC85D2004145F9 /* StaticGoatList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF96F1F27EC85D2004145F9 /* StaticGoatList.swift */; };
 		9CFF61DC27EC4927006A6BA1 /* SimplyGoatApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CFF61DB27EC4927006A6BA1 /* SimplyGoatApp.swift */; };
@@ -23,6 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		387104EF2818122A009D5D13 /* GoatsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoatsViewModel.swift; sourceTree = "<group>"; };
 		9CF96F1D27EC81E9004145F9 /* GoatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoatsView.swift; sourceTree = "<group>"; };
 		9CF96F1F27EC85D2004145F9 /* StaticGoatList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaticGoatList.swift; sourceTree = "<group>"; };
 		9CFF61D827EC4927006A6BA1 /* SimplyGoat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimplyGoat.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -50,6 +52,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		387104EC2817F70A009D5D13 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				9CFF61E927EC4C57006A6BA1 /* Main Tab */,
+				9CFF61EE27EC4FE0006A6BA1 /* Goats Tab */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		387104ED2817F84E009D5D13 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9CFF61F127EC52B2006A6BA1 /* GoatModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		387104EE2817F8B9009D5D13 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				387104EF2818122A009D5D13 /* GoatsViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
 		9CFF61CF27EC4927006A6BA1 = {
 			isa = PBXGroup;
 			children = (
@@ -69,13 +96,13 @@
 		9CFF61DA27EC4927006A6BA1 /* SimplyGoat */ = {
 			isa = PBXGroup;
 			children = (
+				9CFF61DF27EC4929006A6BA1 /* Assets.xcassets */,
 				9CFF61DB27EC4927006A6BA1 /* SimplyGoatApp.swift */,
 				9CFF61DD27EC4927006A6BA1 /* ContentView.swift */,
-				9CFF61F127EC52B2006A6BA1 /* GoatModel.swift */,
 				9CFF61F327EC52F6006A6BA1 /* GoatApi.swift */,
-				9CFF61EE27EC4FE0006A6BA1 /* Goats Tab */,
-				9CFF61E927EC4C57006A6BA1 /* Main Tab */,
-				9CFF61DF27EC4929006A6BA1 /* Assets.xcassets */,
+				387104EC2817F70A009D5D13 /* Screens */,
+				387104ED2817F84E009D5D13 /* Models */,
+				387104EE2817F8B9009D5D13 /* ViewModels */,
 				9CFF61E127EC4929006A6BA1 /* Preview Content */,
 			);
 			path = SimplyGoat;
@@ -185,6 +212,7 @@
 				9CFF61DE27EC4927006A6BA1 /* ContentView.swift in Sources */,
 				9CFF61EB27EC4C82006A6BA1 /* MainView.swift in Sources */,
 				9CF96F2027EC85D2004145F9 /* StaticGoatList.swift in Sources */,
+				387104F02818122A009D5D13 /* GoatsViewModel.swift in Sources */,
 				9CFF61DC27EC4927006A6BA1 /* SimplyGoatApp.swift in Sources */,
 				9CFF61F627EC54DE006A6BA1 /* GoatDetailsView.swift in Sources */,
 				9CFF61F427EC52F6006A6BA1 /* GoatApi.swift in Sources */,
@@ -327,6 +355,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -356,6 +385,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct StaticGoatList: View {
-    @State var goats: [Goat] = [
+    @State var goats: [GoatViewModel] = [
         .init(id: 1, name: "apex", image: "https://a-z-animals.com/media/2021/05/American-Pygmy-Goat-in-enclosure-768x401.jpg", likes: 0, fun_fact: "likes to sprint")
     ]
     
