@@ -13,7 +13,7 @@ struct GoatListView: View {
         NavigationView{
             List(goatsListViewModel.goats, id: \.id) { goat in
                 NavigationLink(
-                    destination: GoatDetailsView(goat: goat), label: {
+                    destination: GoatDetailsView(goatsListViewModel: goatsListViewModel, goatid: goat.id - 1), label: {
                         Image(systemName: goat.isLiked ? "heart.fill" : "")
                             .resizable()
                             .aspectRatio(contentMode: .fit)
